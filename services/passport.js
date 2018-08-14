@@ -14,6 +14,7 @@ passport.deserializeUser((id, done) => {
 });
 
 passport.use(
+  // console.developers.google.com
   new GoogleStrategy(
     {
       clientID: keys.googleClientID,
@@ -27,9 +28,11 @@ passport.use(
       if (existing) {
         return done(null, existing);
       }
-      
+
       const user = await new User({ googleId: profile.id }).save();
       done(null, user);
     }
   )
 );
+
+module.exports = passport;
