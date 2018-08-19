@@ -3,7 +3,7 @@ const cookieSession = require('cookie-session');
 const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 const model = require('./services/model')();
-require('./services/passport');
+const passport = require('./services/passport');
 
 const app = express();
 

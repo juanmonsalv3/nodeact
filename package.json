@@ -25,6 +25,7 @@
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
     "react-stripe-checkout": "^2.6.3",
+    "sendgrid": "^5.2.3",
     "stripe": "^5.4.0"
   },
   "devDependencies": {
@@ -35,6 +36,7 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^3.1.0",
     "nodemon": "^1.14.11"
   }
